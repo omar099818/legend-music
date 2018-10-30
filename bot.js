@@ -9,13 +9,13 @@ const YouTube = require('simple-youtube-api');
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const UserBlocked = new Set(); 
-const prefix = '#';
+const prefix = '/';
 
 
 
 
 client.on('ready',() => {
-client.user.setGame('#help');
+client.user.setGame('/help');
 });
 
 client.on('warn', console.warn);
